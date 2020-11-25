@@ -28,9 +28,9 @@ h1 { font-size:100pt; text-align:right; color:#eee;
 </style>
 </head>
 <body>
-   <h1>Hello Isoyan</h1>
+   <h1>Hello Laravel</h1>
    <p>This is sample page.</p>
-   <p>これは、サンプルで作ったページです。</p>
+   <p>これは、ヒアドキュメントで作ったページです。</p>
 </body>
 </html>
 EOF;
