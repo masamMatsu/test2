@@ -16,4 +16,8 @@ class HelloController extends Controller
     {
        return view('hello.countup');
     }
+    public function other2()
+    {
+       return view('hello.todolist2');
+    }
 }
