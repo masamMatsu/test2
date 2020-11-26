@@ -21,5 +21,5 @@
 @endsection
 
 @section('footer')
-copyright 2020 tuyano.
+copyright 2020 MasayaMatsumiya.
 @endsection

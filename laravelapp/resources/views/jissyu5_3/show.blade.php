@@ -19,5 +19,5 @@
 @endsection
 
 @section('footer')
-copyright 2020 東京情報クリエイター工学院専門学校.
+copyright 2020 MasayaMatsumiya.
 @endsection
