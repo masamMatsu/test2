@@ -12,4 +12,8 @@ class HelloController extends Controller
        $items = DB::select('select * from people');
        return view('hello.index', ['items' => $items]);
     }
+    public function other()
+    {
+       return view('hello.countup');
+    }
 }
