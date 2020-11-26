@@ -10,6 +10,7 @@
 @section('content')
    <a href="/hello/other">カウントアップ</a>
    <a href="/hello/other2">ToDOリスト</a>
+   <a href="/jissyu12">ユーザメニュー</a>
    <table>
    <tr><th>Name</th><th>Mail</th><th>Age</th></tr>
    @foreach ($items as $item)
