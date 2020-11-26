@@ -1,11 +1,12 @@
-@extends('layouts.jissyu')
+@extends('layouts.helloapp')
 
-@section('title', 'Jissyu')
+@section('title', 'ユーザ情報詳細')
 
-@section('menu_title')
-ユーザ情報詳細画面
-
+@section('menubar')
+ユーザ情報詳細
+   @parent
 @endsection
+
 @section('content')
    <table>
    <tr><th>Name</th><th>Mail</th><th>Age</th></tr>

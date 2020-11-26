@@ -1,10 +1,12 @@
-@extends('layouts.jissyu')
+@extends('layouts.helloapp')
 
-@section('title', 'Jissyu')
+@section('title', 'ユーザ情報更新')
 
-@section('menu_title')
-ユーザ情報更新画面
+@section('menubar')
+ユーザ情報更新
+   @parent
 @endsection
+
 
 @section('content')
    <form action="/jissyu12/update" method="post">

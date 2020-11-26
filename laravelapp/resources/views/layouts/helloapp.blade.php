@@ -13,15 +13,63 @@
        border-bottom:solid 1px #ccc; color:#ccc; }
    th {background-color:#999; color:fff; padding:5px 10px; }
    td {border: solid 1px #aaa; color:#999; padding:5px 10px; }
-   </style>
+   
+   a { color: #b7a077; }
+    a:visited { color: #a8a8a8; }
+    a:hover {
+    color: #988564;
+    font-weight: bold;
+    text-decoration: none;
+    }
+    a img { transition: opacity 0.2s linear; }
+    a:hover img { opacity: 0.7; }
+   
+    #global_navi {
+    width: 980px;
+    clear: both;
+    overflow: hidden;
+    margin: 16px auto;
+    }
+    #global_navi ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    #global_navi ul li {
+    width: 195px;
+    float: left;
+    margin-right: 1px;
+    text-align: center;
+    }
+    #global_navi ul li a {
+    display: block;
+    padding: 16px;
+    background-color: #352b23;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.2s linear;
+    }
+    #global_navi ul li.current a { 
+    background-color: #b7a077; 
+    }
+    #global_navi ul li a:hover { 
+    background-color: #8c7a5b;
+    }
+   
+</style>
 </head>
 <body>
    <h1>@yield('title')</h1>
    @section('menubar')
-   <h2 class="menutitle">※メニュー</h2>
-   <ul>
-       <li>@show</li>
-   </ul>
+   <nav id="global_navi">
+      <ul>
+        <li class="current"><a href="/hello"">HOME</a></li>
+        <li><a href="/hello/other">カウントアップ</a></li>
+        <li><a href="/hello/other2">ToDOリスト</a></li>
+        <li><a href="/jissyu12">ユーザメニュー</a></li>
+      </ul>
+    </nav>
+       @show
    <hr size="1">
    <div class="content">
    @yield('content')

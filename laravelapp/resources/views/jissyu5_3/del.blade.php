@@ -1,9 +1,10 @@
-@extends('layouts.jissyu')
+@extends('layouts.helloapp')
 
-@section('title', 'Jissyu')
+@section('title', 'ユーザ情報削除')
 
-@section('menu_title')
-ユーザ情報削除画面
+@section('menubar')
+ユーザ情報削除
+   @parent
 @endsection
 
 @section('content')

@@ -21,6 +21,7 @@
 			<p><button v-on:click="cleanToDo">処理済みを削除</button></p>
 			<p>{{ remaining }} / {{ todos.length }}件処理
 		</div>
+    <a href="/hello">トップメニュー</a>
 
 		<script>
 			new Vue({

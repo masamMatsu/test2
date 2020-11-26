@@ -1,9 +1,10 @@
-@extends('layouts.jissyu')
+@extends('layouts.helloapp')
 
-@section('title', 'Jissyu')
+@section('title', 'ユーザ情報一覧')
 
-@section('menu_title')
-ユーザ情報一覧画面
+@section('menubar')
+ユーザ情報一覧
+   @parent
 @endsection
 
 @section('content')
@@ -21,7 +22,6 @@
        </tr>
    @endforeach
    </table>
-   <a href="/hello">トップメニュー</a>
 @endsection
 
 @section('footer')

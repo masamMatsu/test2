@@ -13,6 +13,7 @@
 			<p> {{count}}回</p>
 			<button v-on:click="countUp">カウント</button>
 		</div>
+    <a href="/hello">トップメニュー</a>
 		
 		<script>
 		new Vue({
