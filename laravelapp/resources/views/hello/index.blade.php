@@ -3,7 +3,7 @@
 @section('title', '松Laravel')
 
 @section('menubar')
-    HOME
+    ホーム
    @parent
 @endsection
 
