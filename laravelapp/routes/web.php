@@ -29,3 +29,10 @@ Route::get('jissyu12/edit', 'App\Http\Controllers\Jissyu5_3Controller@edit');
 Route::post('jissyu12/update', 'App\Http\Controllers\Jissyu5_3Controller@update');
 Route::get('jissyu12/del', 'App\Http\Controllers\Jissyu5_3Controller@del');
 Route::post('jissyu12/remove', 'App\Http\Controllers\Jissyu5_3Controller@remove');
+
+
+Route::get('/image_input', 'App\Http\Controllers\ImageController@getImageInput');
+Route::post('/image_confirm', 'App\Http\Controllers\ImageController@postImageConfirm');
+Route::post('/image_complete', 'App\Http\Controllers\ImageController@postImageComplete');
+Route::get('/image_fin', 'App\Http\Controllers\ImageController@viewImage');
+

@@ -117,6 +117,7 @@ background-color: #8c7a5b;
         <li><a href="/hello/other">カウントアップ</a></li>
         <li><a href="/hello/other2">ToDOリスト</a></li>
         <li><a href="/jissyu12">ユーザメニュー</a></li>
+        <li><a href="/image_input">画像管理</a></li>
       </ul>
     </nav>
 

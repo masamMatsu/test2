@@ -14,7 +14,7 @@
    @foreach ($items as $item)
        <tr>
            <td>{{$item->name}}</td>
-           <td>{{$item->mail}}</td>
+           <td><a href="{{$item->mail}}">{{$item->mail}}</a></td>
            <td>{{$item->age}}</td>
            <td><a href="/jissyu12/show?id={{$item->id}}">詳細</a></td>
            <td><a href="/jissyu12/edit?id={{$item->id}}">更新</a></td>
