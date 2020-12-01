@@ -14,11 +14,22 @@
         ファイル：
         <input type="file" name="imagefile" value=""/><br /><br />
 
-        商品名：<br />
+        画像名称：<br />
         <input type="text" name="product_name" size="50" value="{{ old('name') }}"/><br /><br />
 
         <input type="submit" name="confirm" id="button" value="確認" />
     </form>
+    <table>
+   <tr><th>ID</th><th>Image</th><th>Name</th></tr>
+   @foreach ($items as $item)
+       <tr>
+           <td>{{$item->product_id}}</td>
+           <td><img src="{{$item->path}}" width="200" height="130"><td>
+           <td>{{$item->product_name}}</td>
+       </tr>
+   @endforeach
+   </table>
+
 @endsection
 
 @section('footer')

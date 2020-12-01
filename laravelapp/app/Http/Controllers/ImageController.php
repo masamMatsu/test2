@@ -10,7 +10,9 @@ use Illuminate\Support\Facades\DB; //追加
 class ImageController extends Controller
 {
     public function getImageInput(){
-        return view('gazo.image_input');
+        $items = DB::select('select * from products');
+        return view('gazo.image_input', ['items' => $items]);
+//        return view('gazo.image_input');
     }
     
 //    public function postImageConfirm(ImageUploadRequest $request){
@@ -63,13 +65,13 @@ class ImageController extends Controller
         DB::table('products')->insert($param);
 
 //        return view('image_complete');
-        return redirect('/image_fin');
+        return redirect('/image_input');
 }
 
-    public function viewImage(Request $request)
-    {
-       $items = DB::select('select * from products');
-       return view('gazo.image_complete', ['items' => $items]);
-    }
+//    public function viewImage(Request $request)
+//    {
+//       $items = DB::select('select * from products');
+//       return view('gazo.image_complete', ['items' => $items]);
+//    }
 
 }
