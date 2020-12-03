@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\DB; //追加
 class ImageController extends Controller
 {
     public function getImageInput(){
+        //降順に並べ替え
         $items = DB::select('select * from products order by product_id desc');
         return view('gazo.image_input', ['items' => $items]);
 //        return view('gazo.image_input');
