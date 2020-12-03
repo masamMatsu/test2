@@ -26,6 +26,8 @@
            <td>{{$item->product_id}}</td>
            <td><img src="{{$item->path}}" width="200" height="130"><td>
            <td>{{$item->product_name}}</td>
+{{--           <td><a href="/image_edit?product_id={{$item->product_id}}">更新</a></td>  --}}
+           <td><a href="/image_del?product_id={{$item->product_id}}">削除</a></td>
        </tr>
    @endforeach
    </table>

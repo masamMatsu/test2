@@ -35,4 +35,8 @@ Route::get('/image_input', 'App\Http\Controllers\ImageController@getImageInput')
 Route::post('/image_confirm', 'App\Http\Controllers\ImageController@postImageConfirm');
 Route::post('/image_complete', 'App\Http\Controllers\ImageController@postImageComplete');
 Route::get('/image_fin', 'App\Http\Controllers\ImageController@viewImage');
+//Route::get('/image_edit', 'App\Http\Controllers\ImageController@edit');
+Route::get('/image_del', 'App\Http\Controllers\ImageController@del');
+//Route::post('jissyu12/update', 'App\Http\Controllers\ImageController@update');
+Route::post('/image_remove', 'App\Http\Controllers\ImageController@remove');
 

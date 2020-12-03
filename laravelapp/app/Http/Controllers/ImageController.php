@@ -67,7 +67,7 @@ class ImageController extends Controller
 
 //        return view('image_complete');
         return redirect('/image_input');
-}
+    }
 
 //    public function viewImage(Request $request)
 //    {
@@ -75,4 +75,39 @@ class ImageController extends Controller
 //       return view('gazo.image_complete', ['items' => $items]);
 //    }
 
+
+
+    public function edit(Request $request)
+    {
+        $item = DB::table('products')
+        ->where('product_id', $request->product_id)->first();
+        return view('gazo.image_edit', ['item' => $item]);
+    }
+
+    public function update(Request $request)
+    {
+        $param = [
+            'product_id' => $request->product_id,
+            'path' => $request->path,
+        ];
+        DB::table('products')
+            ->where('product_id', $request->product_id)
+            ->update($param);
+        return redirect('/image_input');
+    }
+
+    public function del(Request $request)
+    {
+        $item = DB::table('products')
+            ->where('product_id', $request->product_id)->first();
+        return view('gazo.image_del', ['item' => $item]);
+    }
+
+    public function remove(Request $request)
+    {
+        DB::table('products')
+        ->where('product_id', $request->product_id)->delete();
+        return redirect('/image_input');
+    }
 }
+
