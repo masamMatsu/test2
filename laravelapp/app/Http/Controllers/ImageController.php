@@ -12,13 +12,18 @@ class ImageController extends Controller
     public function getImageInput(){
         //降順に並べ替え
         $items = DB::select('select * from products order by product_id desc');
-        return view('gazo.image_input', ['items' => $items]);
+        
+//        return view('gazo.image_input', ['items' => $items]);
+        
+        $test_1 = 123;
+        return view('gazo.image_input')->with(['items' => $items,'test_1'=>$test_1]);
+
 //        return view('gazo.image_input');
     }
     
 //    public function postImageConfirm(ImageUploadRequest $request){
     public function postImageConfirm(Request $request){
-            $post_data = $request->except('imagefile');
+        $post_data = $request->except('imagefile');
         $imagefile = $request->file('imagefile');
     
         $temp_path = $imagefile->store('public/temp');

@@ -21,6 +21,9 @@ Route::get('hello', 'App\Http\Controllers\HelloController@index');
 Route::get('hello/other', 'App\Http\Controllers\HelloController@other');
 Route::get('hello/other2', 'App\Http\Controllers\HelloController@other2');
 
+Route::get('hello/other3', 'App\Http\Controllers\HelloController@other3');
+
+
 Route::get('jissyu12', 'App\Http\Controllers\Jissyu5_3Controller@index');
 Route::get('jissyu12/show', 'App\Http\Controllers\Jissyu5_3Controller@show');
 Route::get('jissyu12/add', 'App\Http\Controllers\Jissyu5_3Controller@add');
@@ -40,3 +43,7 @@ Route::get('/image_del', 'App\Http\Controllers\ImageController@del');
 //Route::post('jissyu12/update', 'App\Http\Controllers\ImageController@update');
 Route::post('/image_remove', 'App\Http\Controllers\ImageController@remove');
 
+
+//kaneko
+Route::get('company/add', 'App\Http\Controllers\CompanyController3@add');
+Route::post('company/create', 'App\Http\Controllers\CompanyController3@create');
